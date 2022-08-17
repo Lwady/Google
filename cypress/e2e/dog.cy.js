@@ -1,5 +1,3 @@
-import { Given, When, Then} from "cypress-cucumber-preprocessor/steps";
-
 describe('Dog search', () => {
   it('Searches for dogs on Google', () => {
     cy.visit('https://www.google.com/')
