@@ -7,6 +7,7 @@ const createEsbuildPlugin =
 
   module.exports = defineConfig({
     e2e: {
+      
       async setupNodeEvents(on, config) {
         const bundler = createBundler({
           plugins: [createEsbuildPlugin(config)],
@@ -16,5 +17,8 @@ const createEsbuildPlugin =
         await addCucumberPreprocessorPlugin(on, config);
   
         return config;
-      }
+      }, 
+
+      specPattern: 'cypress/e2e/dog/dog.feature'
+
       }});

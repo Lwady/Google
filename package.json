@@ -8,6 +8,11 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./cypress/e2e"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
