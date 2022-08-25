@@ -19,6 +19,6 @@ const createEsbuildPlugin =
         return config;
       }, 
 
-      specPattern: 'cypress/e2e/dog/dog.feature'
+      specPattern: 'cypress/e2e/BDD/*.feature'
 
       }});
